@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36AFDBEBAA9D039ECC4CE9F1 /* Pods_GoogleAPIFileUploading.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7A5B368FFDCA78266B58E5 /* Pods_GoogleAPIFileUploading.framework */; };
+		CC20FC661F1E1D43006A0637 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC20FC651F1E1D43006A0637 /* AppDelegate.swift */; };
+		CC20FC681F1E1D44006A0637 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC20FC671F1E1D44006A0637 /* ViewController.swift */; };
+		CC20FC6B1F1E1D44006A0637 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC20FC691F1E1D44006A0637 /* Main.storyboard */; };
+		CC20FC6D1F1E1D44006A0637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC20FC6C1F1E1D44006A0637 /* Assets.xcassets */; };
+		CC20FC701F1E1D44006A0637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC20FC6E1F1E1D44006A0637 /* LaunchScreen.storyboard */; };
+		CC20FC791F1E1D63006A0637 /* GoogleDriveUploadFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC20FC771F1E1D63006A0637 /* GoogleDriveUploadFile.swift */; };
+		CC20FC7A1F1E1D63006A0637 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC20FC781F1E1D63006A0637 /* GoogleService-Info.plist */; };
+		CC20FC7C1F1E1E08006A0637 /* ViewController+GoogleDriveUploadFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC20FC7B1F1E1E08006A0637 /* ViewController+GoogleDriveUploadFile.swift */; };
+		CC20FC7E1F1E1E5E006A0637 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC20FC7D1F1E1E5E006A0637 /* Constants.swift */; };
+		CC20FC801F1E1F2E006A0637 /* ProgressBarIND.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC20FC7F1F1E1F2E006A0637 /* ProgressBarIND.xib */; };
+		CC20FC821F1E20DE006A0637 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC20FC811F1E20DD006A0637 /* Utils.swift */; };
+		CC20FC841F1E2165006A0637 /* uploadImage.png in Resources */ = {isa = PBXBuildFile; fileRef = CC20FC831F1E2165006A0637 /* uploadImage.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		32CF99205347D0EDCE546CDC /* Pods-GoogleAPIFileUploading.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAPIFileUploading.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleAPIFileUploading/Pods-GoogleAPIFileUploading.release.xcconfig"; sourceTree = "<group>"; };
+		CA7A5B368FFDCA78266B58E5 /* Pods_GoogleAPIFileUploading.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleAPIFileUploading.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC20FC621F1E1D43006A0637 /* GoogleAPIFileUploading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleAPIFileUploading.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC20FC651F1E1D43006A0637 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC20FC671F1E1D44006A0637 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC20FC6A1F1E1D44006A0637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC20FC6C1F1E1D44006A0637 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC20FC6F1F1E1D44006A0637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC20FC711F1E1D44006A0637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC20FC771F1E1D63006A0637 /* GoogleDriveUploadFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDriveUploadFile.swift; sourceTree = "<group>"; };
+		CC20FC781F1E1D63006A0637 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CC20FC7B1F1E1E08006A0637 /* ViewController+GoogleDriveUploadFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+GoogleDriveUploadFile.swift"; sourceTree = "<group>"; };
+		CC20FC7D1F1E1E5E006A0637 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CC20FC7F1F1E1F2E006A0637 /* ProgressBarIND.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressBarIND.xib; sourceTree = "<group>"; };
+		CC20FC811F1E20DD006A0637 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CC20FC831F1E2165006A0637 /* uploadImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uploadImage.png; sourceTree = "<group>"; };
+		F947E97A05D02D4F1358B6B4 /* Pods-GoogleAPIFileUploading.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAPIFileUploading.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleAPIFileUploading/Pods-GoogleAPIFileUploading.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC20FC5F1F1E1D43006A0637 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36AFDBEBAA9D039ECC4CE9F1 /* Pods_GoogleAPIFileUploading.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A171E61D07A4956FB12199D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA7A5B368FFDCA78266B58E5 /* Pods_GoogleAPIFileUploading.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6A54322B6D20280F518E052 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F947E97A05D02D4F1358B6B4 /* Pods-GoogleAPIFileUploading.debug.xcconfig */,
+				32CF99205347D0EDCE546CDC /* Pods-GoogleAPIFileUploading.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CC20FC591F1E1D43006A0637 = {
+			isa = PBXGroup;
+			children = (
+				CC20FC641F1E1D43006A0637 /* GoogleAPIFileUploading */,
+				CC20FC631F1E1D43006A0637 /* Products */,
+				A6A54322B6D20280F518E052 /* Pods */,
+				A171E61D07A4956FB12199D8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CC20FC631F1E1D43006A0637 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC20FC621F1E1D43006A0637 /* GoogleAPIFileUploading.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC20FC641F1E1D43006A0637 /* GoogleAPIFileUploading */ = {
+			isa = PBXGroup;
+			children = (
+				CC20FC651F1E1D43006A0637 /* AppDelegate.swift */,
+				CC20FC671F1E1D44006A0637 /* ViewController.swift */,
+				CC20FC7B1F1E1E08006A0637 /* ViewController+GoogleDriveUploadFile.swift */,
+				CC20FC7F1F1E1F2E006A0637 /* ProgressBarIND.xib */,
+				CC20FC771F1E1D63006A0637 /* GoogleDriveUploadFile.swift */,
+				CC20FC7D1F1E1E5E006A0637 /* Constants.swift */,
+				CC20FC831F1E2165006A0637 /* uploadImage.png */,
+				CC20FC811F1E20DD006A0637 /* Utils.swift */,
+				CC20FC781F1E1D63006A0637 /* GoogleService-Info.plist */,
+				CC20FC691F1E1D44006A0637 /* Main.storyboard */,
+				CC20FC6C1F1E1D44006A0637 /* Assets.xcassets */,
+				CC20FC6E1F1E1D44006A0637 /* LaunchScreen.storyboard */,
+				CC20FC711F1E1D44006A0637 /* Info.plist */,
+			);
+			path = GoogleAPIFileUploading;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC20FC611F1E1D43006A0637 /* GoogleAPIFileUploading */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC20FC741F1E1D44006A0637 /* Build configuration list for PBXNativeTarget "GoogleAPIFileUploading" */;
+			buildPhases = (
+				D3DAFAF5A42D3277A048BA68 /* [CP] Check Pods Manifest.lock */,
+				CC20FC5E1F1E1D43006A0637 /* Sources */,
+				CC20FC5F1F1E1D43006A0637 /* Frameworks */,
+				CC20FC601F1E1D43006A0637 /* Resources */,
+				5765C9C4FC64F66BFFCF0015 /* [CP] Embed Pods Frameworks */,
+				554C45D893F21126B4CFD06C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleAPIFileUploading;
+			productName = GoogleAPIFileUploading;
+			productReference = CC20FC621F1E1D43006A0637 /* GoogleAPIFileUploading.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC20FC5A1F1E1D43006A0637 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Kahuna;
+				TargetAttributes = {
+					CC20FC611F1E1D43006A0637 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = GD37G3RSL6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CC20FC5D1F1E1D43006A0637 /* Build configuration list for PBXProject "GoogleAPIFileUploading" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC20FC591F1E1D43006A0637;
+			productRefGroup = CC20FC631F1E1D43006A0637 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC20FC611F1E1D43006A0637 /* GoogleAPIFileUploading */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC20FC601F1E1D43006A0637 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC20FC701F1E1D44006A0637 /* LaunchScreen.storyboard in Resources */,
+				CC20FC801F1E1F2E006A0637 /* ProgressBarIND.xib in Resources */,
+				CC20FC7A1F1E1D63006A0637 /* GoogleService-Info.plist in Resources */,
+				CC20FC6D1F1E1D44006A0637 /* Assets.xcassets in Resources */,
+				CC20FC841F1E2165006A0637 /* uploadImage.png in Resources */,
+				CC20FC6B1F1E1D44006A0637 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		554C45D893F21126B4CFD06C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleAPIFileUploading/Pods-GoogleAPIFileUploading-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5765C9C4FC64F66BFFCF0015 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleAPIFileUploading/Pods-GoogleAPIFileUploading-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3DAFAF5A42D3277A048BA68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC20FC5E1F1E1D43006A0637 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC20FC7E1F1E1E5E006A0637 /* Constants.swift in Sources */,
+				CC20FC7C1F1E1E08006A0637 /* ViewController+GoogleDriveUploadFile.swift in Sources */,
+				CC20FC791F1E1D63006A0637 /* GoogleDriveUploadFile.swift in Sources */,
+				CC20FC681F1E1D44006A0637 /* ViewController.swift in Sources */,
+				CC20FC661F1E1D43006A0637 /* AppDelegate.swift in Sources */,
+				CC20FC821F1E20DE006A0637 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CC20FC691F1E1D44006A0637 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC20FC6A1F1E1D44006A0637 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC20FC6E1F1E1D44006A0637 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC20FC6F1F1E1D44006A0637 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC20FC721F1E1D44006A0637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC20FC731F1E1D44006A0637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC20FC751F1E1D44006A0637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F947E97A05D02D4F1358B6B4 /* Pods-GoogleAPIFileUploading.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GD37G3RSL6;
+				INFOPLIST_FILE = GoogleAPIFileUploading/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kahuna.GoogleAPIFileUploading;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CC20FC761F1E1D44006A0637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32CF99205347D0EDCE546CDC /* Pods-GoogleAPIFileUploading.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GD37G3RSL6;
+				INFOPLIST_FILE = GoogleAPIFileUploading/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kahuna.GoogleAPIFileUploading;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC20FC5D1F1E1D43006A0637 /* Build configuration list for PBXProject "GoogleAPIFileUploading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC20FC721F1E1D44006A0637 /* Debug */,
+				CC20FC731F1E1D44006A0637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC20FC741F1E1D44006A0637 /* Build configuration list for PBXNativeTarget "GoogleAPIFileUploading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC20FC751F1E1D44006A0637 /* Debug */,
+				CC20FC761F1E1D44006A0637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC20FC5A1F1E1D43006A0637 /* Project object */;
+}
