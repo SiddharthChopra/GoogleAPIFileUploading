@@ -40,3 +40,12 @@ To run this sample, you'll need:
   2. Open your project configuration: double-click the project name in the left tree view. Select your app from the TARGETS section, then select the Info tab, and expand the URL Types section.
   2. Click the + button, and add a URL scheme for your reversed client ID. To find this value, open the GoogleService-Info.plist configuration file, and look for the REVERSED_CLIENT_ID key. Copy the value of that key, and paste it into the URL Schemes box on the configuration page. Leave the other fields blank.
 1. Build the project and run it on the iOS simulator.
+
+
+## Author
+
+Siddharth Chopra, siddharth5852@gmail.com
+
+## License
+
+GoogleAPIFileUploading is available under the MIT license. See the LICENSE file for more info.
